@@ -1,0 +1,7 @@
+---
+# tasks file for house
+- hosts: localhost
+  # become: yes
+  tasks:
+    - include_tasks: hoge.yml
+    - include_tasks: piyo.yml

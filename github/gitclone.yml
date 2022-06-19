@@ -1,0 +1,8 @@
+- hosts: localhost
+  gather_facts: no
+
+  tasks:
+  - name: git clone
+    ansible.builtin.git:
+      repo: https://github.com/yumekiti/ansible
+      dest: /home/yume/codes/ansible/github
