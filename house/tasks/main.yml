@@ -2,6 +2,8 @@
 # tasks file for house
 - hosts: localhost
   # become: yes
+  vars_files:
+    - ../vars/main.yml
   tasks:
     - include_tasks: hoge.yml
     - include_tasks: piyo.yml

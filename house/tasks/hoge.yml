@@ -1,2 +1,6 @@
+- name: template vhost file
+  template:
+    src: ../templates/hoge.j2
+    dest: ./hoge.conf
 - name: echo
   shell: echo hoge >> ./hoge.txt
