@@ -3,6 +3,7 @@
 - hosts: localhost
   # become: yes
   vars_files:
+    - ../defaults/main.yml
     - ../vars/main.yml
   tasks:
     - include_tasks: hoge.yml
